@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iron Man</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="alert alert-danger d-flex justify-content-center">
+            <h1>Iron Man</h1>
+    </div>
+    
+    <div class="d-flex justify-content-center">
+                <div class="btn btn-success btn-outline-primary">
+            <a href="https://www.marvel.com/characters/iron-man-tony-stark" target="_blank" style="color:white">Marvel Profile</a>
+         </div>
+    </div>
+    
+    <br>
+    <div class=" d-flex justify-content-center">
+            <a href="https://www.superherostuff.com/biographies/ironmanbiography.html" target="_blank"><img src="Iron-Man.jpg" alt="Iron Man" width="400" height="600"></a>
+    </div>
+    <div class="alert alert-warning d-flex justify-content-center ">
+            <h3>Here is the <a href=" https://twitter.com/Iron_Man" target="_blank">Twitter Link </a></h3>
+    </div>
+
+     <div class="list-group " style="border:solid">
+            <h2>Enemies:</h2>
+            <ul>
+                <li class="list-group-item active">Mandarin,Ivan Vanko/Whiplash</li>
+                <li class="list-group-item list-group-item-success">Brandt</li>
+                <li class="list-group-item">Savin(James Bagge Dale)</li>
+                <li class="list-group-item list-group-item-danger">Thanos</li>
+                <li class="list-group-item">Obandiah Stane</li>
+                <li class="list-group-item list-group-item-dark">Ultron</li>
+            </ul>
+     </div>
+     <div class="row">
+    <div class="container col-lg-6 col-sm">
+    <h2>Top 3 Iron Man Movies:</h2>
+    <div class="list-group ">
+    <ol>
+        <li class="list-group-item active">Iron Man(2008)</li>
+        <li class="list-group-item">Iron Man2(2010)</li>
+        <li class="list-group-item">Iron Man3(2012)</li>
+    </ol>
+</div>
+</div>
+<div class="container col-lg-6 col-sm">
+    <h2>Top 3 Iron Man Movies:</h2>
+    <div class="list-group " >
+    <ol>
+            <li class="list-group-item list-group-item-danger">Iron Man( <span style="color:red">2008</span>)</li>
+            <li class="list-group-item">Iron Man2(<span style="color:red">2010</span>)</li>
+            <li class="list-group-item">Iron Man3(<span style="color:red">2012</span>)</li>
+        </ol>
+    </div>
+</div>
+ </div>
+
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+   <h1>Twitter Link  <a href="https://twitter.com/Iron_Man" target="_blank"><img src="twitter.png" alt="Twitter" width="250" height="250"> </h1></a>  
+   <b><h1 item-height="100">Registration Form</h1></b>
+<div class="form-group">
+
+
+   <form action="https://hidden-ridge-64485.herokuapp.com/registration" method="GET">
+    <br>
+   <span>
+      <label for="1" class="form-label"><b>Name</b></label> 
+    <input type="text" name="username" placeholder="user name" class="form-control"></span>
+   <br>
+   <br>
+   <label for="2" class="form-label"><b>Password</b></label> 
+   <span><input type="password" name="pass" placeholder="enter password" class="form-control"></span>
+   <br>
+   <br>
+   <label for="3" class="form-label"><b>Email</b></label> 
+   <span><input type="email" name="email" placeholder="email" class="form-control"></span>
+   <br>
+   <br>
+   <span><b>Age</b><input type="number" name="age" class="form-control"></span><br>
+
+     <div class="form-check  border  border-warning">
+   <h2>Which is your favorite superhero ?</h2>
+   <br>
+   <div class="form-check">
+        <label for="exampleRadios1" class="form-check-label">Superman </label>
+        <input type="radio" name="superhero" value="Superman" class=" form-control ">
+   
+  
+</div>
+<div class="form-check">
+        <label for="exampleRadios2" class="form-check-label"> Batman </label>
+        <input type="radio" name="superhero" value="Batman" class=" form-control">
+   
+  
+</div>
+<div class="form-check">
+        <label for="exampleRadios3" class="form-check-label">Spider Man</label>
+        <input type="radio" name="superhero" value="Spider Man" class=" form-control ">
+      
+  
+</div>
+<div class="form-check">
+        <label for="exampleRadios4" class="form-check-label">Iron Man</label>
+        <input type="radio" name="superhero" value="Iron Man" class=" form-control" >
+   
+   
+    </div>
+   
+
+</div>
+   <br>
+   <br> 
+   
+   <label for="1"> Date</label>
+   <input type="date" name="date" class="form-control"> <br>
+
+   <br>
+   
+   <label for="2">Week</label>  
+   <input type="week" class="form-control">
+
+   <br>
+   <br>
+   <div class="offset-md-3">
+        <input type="submit" value="submit" class="btn btn-primary">
+   </div>
+   
+
+   </form>
+</div>
+   </div>
+
+</div>
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+   <h1>Booking form</h1>
+   <form action="https://hidden-ridge-64485.herokuapp.com/booking" method="POST">
+   <select name="movie" class="form-control form-control-lg">
+       <option value="Avengers">Avengers</option>
+       <option value="Avengers:Infinitywar">Avengers:Infinitywar</option>
+       <option value="Avengers:Endgame">Avengers:Endgame</option>       
+    </select>
+    <br>
+    <div class=" border border-info">
+    <div class="form-check">
+            <label for="11" class="form-check-label">Popcorn</label> 
+            <input type="checkbox" value="popcorn" name="addon" class="form-control">
+    </div>
+    
+    <br>
+    <div class="form-check">
+            <label for="22" class="form-check-label">Beverages</label>
+            <input type="checkbox" value="beverages" name="addon" class="form-control">
+            
+    </div>
+    <br>
+    <div class="form-check">
+            <label for="33" class="form-check-label">Chips</label>
+            <input type="checkbox" value="chips" name="addon" class="form-control">
+            
+    </div>
+</div>
+    <br>
+    <br>
+    <input type="submit" value="submit" class="btn btn-primary offset-md-3">
+
+</form>
+
+<h1>Selfie Upload </h1>
+<form action="https://hidden-ridge-64485.herokuapp.com/selfie" method="POST" enctype="multipart/form-data">
+<input type="file" name="file">
+<br>
+<br>
+<input type="submit" value="submit" class="btn btn-primary offset-md-3">
+</form>
+</div>
+</div>
+</body>
+
+</html>
